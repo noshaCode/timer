@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;  
+}
+
+body {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 99vh;
+ background:
+        linear-gradient(
+            cyan,
+            rgba(255,255,255,0) 
+        ),
+        linear-gradient(
+            -45deg,
+            magenta,
+            rgba(255,255,255,0) 
+        ),
+        linear-gradient(
+            45deg,
+            orange,
+            rgba(255,255,255,0) 
+        );
+    background-blend-mode: screen;
+}
+
+
+
+.timer{
+    display: flex;
+    font-size: 70px;
+}
+
+.timer div {
+    margin: 15px;
+}
+
+.timer div:not(:last-of-type):after{
+    content: " : ";
+}
+
+button {
+    border-radius: 50px;
+    padding: 12px;
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    width: 80px;
+}
